@@ -1,7 +1,7 @@
 // Load events when button is clicked
 document.getElementById("loadEvents")?.addEventListener("click", () => {
 
-  fetch("https://api.tvmaze.com/shows") // FREE API (works)
+  fetch("https://api.tvmaze.com/shows") // FREE API 
     .then(response => response.json())
     .then(data => {
 
