@@ -1,0 +1,70 @@
+/* basic reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fafafa;
+}
+
+/* navbar */
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav h1 {
+  color: white;
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* sections */
+section {
+  padding: 30px;
+  text-align: center;
+}
+
+/* button */
+button {
+  padding: 10px 15px;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+/* simple cards */
+section div {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin: 10px;
+  display: inline-block;
+}
+
+/* events page */
+#eventsContainer div {
+  border: 1px solid #ddd;
+  margin: 10px auto;
+  padding: 10px;
+  width: 70%;
+  text-align: left;
+}
+
+/* headings */
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
