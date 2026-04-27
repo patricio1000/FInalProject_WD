@@ -1,70 +1,122 @@
-/* basic reset */
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
   background-color: #fafafa;
 }
 
-/* navbar */
-nav {
-  background-color: #333;
-  padding: 10px;
+/* NAVBAR */
+.custom-navbar {
+  background-color: #031135; 
 }
 
-nav h1 {
-  color: white;
-  display: inline;
-  margin-right: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
+/* text */
+.custom-navbar .navbar-brand,
+.custom-navbar a {
+  color: white !important;
   margin-right: 15px;
+  text-decoration: none;
 }
 
-nav a:hover {
+/* hover */
+.custom-navbar a:hover {
+  opacity: 0.8;
   text-decoration: underline;
 }
 
-/* sections */
-section {
-  padding: 30px;
-  text-align: center;
+/* bttn movil */
+.navbar-toggler {
+  border-color: rgba(255,255,255,0.5);
 }
 
-/* button */
-button {
-  padding: 10px 15px;
-  background-color: #0077cc;
-  color: white;
-  border: none;
-  cursor: pointer;
+/* manu icon */
+.navbar-toggler-icon {
+  filter: invert(1);
 }
 
-button:hover {
-  background-color: #005fa3;
-}
-
-/* simple cards */
-section div {
-  border: 1px solid #ccc;
-  padding: 15px;
-  margin: 10px;
-  display: inline-block;
-}
-
-/* events page */
-#eventsContainer div {
-  border: 1px solid #ddd;
-  margin: 10px auto;
-  padding: 10px;
-  width: 70%;
-  text-align: left;
-}
-
-/* headings */
+/* TITLES*/
 h1 {
   text-align: center;
   margin-top: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+/* SECTIONS */
+section {
+  padding: 40px 20px;
+}
+
+/*BUTTONS */
+button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* IMAGES*/
+img {
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+  height: 180px;
+  object-fit: cover;
+}
+
+img:hover {
+  transform: scale(1.03);
+}
+
+/* INDEX */
+section h3 {
+  margin-top: 10px;
+}
+
+/* hover in columns */
+section .col-md-4 {
+  transition: transform 0.2s ease;
+}
+
+section .col-md-4:hover {
+  transform: translateY(-3px);
+}
+
+/* EVENTS GRID*/
+#eventsContainer .col-md-4 {
+  display: flex;
+}
+
+#eventsContainer .border {
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+/* imgs in events */
+#eventsContainer img {
+  border-radius: 5px;
+}
+
+/* FOOTER */
+footer {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  img {
+    height: 150px;
+  }
 }
